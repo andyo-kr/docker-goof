@@ -1,6 +1,6 @@
-FROM ghost:2.37.2 as ghost
+FROM ghost:5.67.0 as ghost
 
-FROM node:10.4.0 as node
+FROM node:20.8.0-slim as node
 
 # Copy manifest files
 COPY --from=ghost /var/lib/ghost /var/lib/ghost
