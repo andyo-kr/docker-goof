@@ -1,3 +1,3 @@
-FROM node:20.8.0-slim
+FROM node:10.4.0
 
 RUN apt-get install -y imagemagick
